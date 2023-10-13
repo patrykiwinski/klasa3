@@ -1,28 +1,51 @@
-<html>
+﻿<html>
 <head>
-<META HTTP-EQUIV="content-type" content="text/html; charset=utf-8"> >
+<title>Patryk Iwinski</title>
+
+<script language="JavaScript">
+function WinOpen_z1() {
+  window.open("zad1.html","grafik1","toolbar=no,directories=no,menubar=no,height=600,width=600,top=400,left=15");
+}
+function WinOpen_z2() {
+  window.open("zad2_iwi.html","grafika2","toolbar=no,directories=no,menubar=no,height=600,width=600,top=400,left=615");
+}
+function WinOpen_z3() {
+  window.open("zad3_iwi.html","grafika3","toolbar=no,directories=no,menubar=no,height=600,width=600,top=400,left=1215");
+}
+function WinOpen_z4() {
+  window.open("zad4_iwi.html","grafika4","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
+}
+function WinOpen_z5() {
+window.open("zad5_iwi.html","grafika4","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
+}
+function WinOpen_z10() {
+window.open("zad10_iwi.html","grafika4","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
+}
+function WinOpen_z11() {
+window.open("zad11_iwi.html","grafika4","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
+}
+
+
+function okno_zamknij() {
+  window.close();
+}
+</script>
 </head>
 <body>
-<table width=95% border="1" align="center">
-<tr>
-<td width=5% align=center>
-<A href="zad1.html" target="strony">z1</A>
-<br>
-<A href="zad2_iwi.html" target="strony">z2</A>
-<br>
-<A href="zad3_iwi.html" target="strony">z3</A>
-<br>
-<A href="zad4_iwi.html" target="strony">z4</A>
-<br>
-<A href="zad5_iwi.html" target="strony">z5</A>
-<br>
-</td>
-<td width=90% align=center><iframe width=1100 height=650 name="strony" src="zad1.html" border="0"></iframe>
-</td>
-<td width=5% align=center><a href="start.html" target="strony">Start</a>
-<br>
-</td>
-</tr>
-</table>
+<center>
+<p><b><font color="red" size="8">Szkielet zaliczeniowy JavaScript Patryk Iwinski 3g. modulo to 3 wiec ukłąd 4</font></b></p>
+<form>
+<input type="button" name="zad1" value="grafika1" onclick="WinOpen_z1()">
+<input type="button" name="zad2" value="grafika2" onclick="WinOpen_z2()">
+<input type="button" name="zad3" value="grafika3" onclick="WinOpen_z3()">
+<input type="button" name="zad4" value="grafika4" onclick="WinOpen_z4()">
+<input type="button" name="zad4" value="grafika4" onclick="WinOpen_z5()">
+<input type="button" name="zad4" value="grafika4" onclick="WinOpen_z10()">
+<input type="button" name="zad4" value="grafika4" onclick="WinOpen_z11()">
+<br><br><br><br><br><br><br><br><br>
+
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</form>
+</center>
 </body>
 </html>
