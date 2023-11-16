@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Iwinski-Zadanie12</title>
+  <script type="text/javascript">
+    function obliczSekundy() {
+      // Wczytaj dane
+      var D1_iwi = prompt("Podaj pierwszy dzień miesiąca stycznia", "");
+      var G1_iwi = prompt("Podaj pierwszą godzinę", "");
+      var D2_iwi = prompt("Podaj drugi dzień miesiąca stycznia", "");
+      var G2_iwi = prompt("Podaj drugą godzinę", "");
+
+      // Konwersja na liczby
+      var D1 = parseInt(D1_iwi);
+      var G1 = parseInt(G1_iwi);
+      var D2 = parseInt(D2_iwi);
+      var G2 = parseInt(G2_iwi);
+
+      // Oblicz różnicę w sekundach
+      var roznicaSekundy = Math.abs((D2 - D1) * 24 * 60 * 60 + (G2 - G1) * 60 * 60);
+
+      // Wyświetl wynik w kolorze zielonym
+      var wynik = document.getElementById("wynik");
+      wynik.innerHTML = "<span style='color:green; font-size: " + (30 + D1) + "px;'>" +
+                        "Ilość sekund: " + roznicaSekundy + "</span>";
+    }
+  </script>
+</head>
+<body>
+  <input type="button" onclick="obliczSekundy()" value="Oblicz ilość sekund między dniami i godzinami" />
+  <div id="wynik"></div>
+</body>
+</html>
