@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Okna dialogowe</title>
+    <script>
+        function showAlert() {
+            alert("Wyskakujące okienko!");
+        }
+
+        function showPrompt() {
+            var value = prompt("Wprowadź wartość:");
+            alert("Wprowadzona wartość: " + value);
+        }
+
+        function showConfirm() {
+            if (confirm("Czy na pewno chcesz potwierdzić?")) {
+                alert("Potwierdzono");
+            } else {
+                alert("Anulowano");
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="showAlert()">Okienko alert</button>
+    <button onclick="showPrompt()">Okienko prompt</button>
+    <button onclick="showConfirm()">Okienko confirm</button><br><br>
+
+	Okienko alert: Wyświetla okienko dialogowe z informacją i przyciskiem OK. Po kliknięciu przycisku OK, okienko zamyka się. Można użyć funkcji alert() w JavaScript, aby wywołać to okienko.<br><br>
+
+Okienko prompt: Generuje okno, w którym użytkownik może wpisać wartość. Po wprowadzeniu wartości i kliknięciu przycisku OK, wartość ta jest zwracana do programu. Można użyć funkcji prompt() w JavaScript, aby wywołać to okienko.
+<br><br>
+Okienko confirm: Służy do tego, aby użytkownik potwierdził coś. Wyświetla okienko dialogowe z pytaniem i dwoma przyciskami: OK i Anuluj. Po kliknięciu przycisku OK, zwracana jest wartość true, a po kliknięciu przycisku Anuluj - wartość false. Można użyć funkcji confirm() w JavaScript, aby wywołać to okienko.
+
+</body>
+</html>
