@@ -1,147 +1,245 @@
-lls<html>
+<!DOCTYPE html>
+<html>
 <head>
+
 <title>Patryk Iwinski</title>
+<style>
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+button {
+  margin: 20px;
+}
+.custom-btn {
+  width: 180px;
+  height: 50px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+    border-radius: 10px; /* Zaokrąglenie krawędzi */
+  outline: none;
+}
+
+/* 1 */
+.btn-1 {
+  background: rgb(6,14,131);
+  background: linear-gradient(0deg, rgba(122,14,131,1) 0%, rgba(12,25,180,1) 100%);
+  border: none;
+}
+.btn-1:hover {
+background: rgb(6,14,131);
+  background: linear-gradient(0deg, rgba(222,14,131,1) 0%, rgba(12,25,180,1) 100%);
+  border: none;
+  width: 190px;
+  height: 60px;
+  }
+
+
+.button {
+  background-color: #4CAF50; /* Zielony kolor tła */
+  border: none;
+  color: white;
+  padding: 15px 32px; /* Rozmiar przycisku */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px; /* Zaokrąglenie krawędzi */
+}
+
+
+
+
+
+
+ 
+
+
+body {
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+
+
+
+.top-image { position: fixed; top: 0; right: 0; z-index: 1000; }
+  </style>
+  
+  
+  
+  
 <script language="JavaScript">
-function WinOpen_z1() {
-  window.open("zad1.html","grafik1","toolbar=no,directories=no,menubar=no,height=600,width=600,top=400,left=15");
-}
-function WinOpen_z2() {
-  window.open("zad2_iwi.html","grafika2","toolbar=no,directories=no,menubar=no,height=600,width=600,top=400,left=615");
-}
-function WinOpen_z3() {
-  window.open("zad3_iwi.html","grafika3","toolbar=no,directories=no,menubar=no,height=600,width=600,top=400,left=1215");
-}
-function WinOpen_z4() {
-  window.open("zad4_iwi.html","grafika4","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
-}
-function WinOpen_z5() {
-window.open("zad5_iwi.html","grafika4","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
-}
-  function WinOpen_z6() {
-window.open("zad6_iwi.html","grafika4","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
-}
-function WinOpen_z7() {
-  window.open("zad7_iwi.html", "grafika7", "toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
-}
-    function WinOpen_z8() {
-window.open("zad8_iwi.html","grafika4","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
-}
-    function WinOpen_z9() {
-window.open("zad9_iwi.html","grafika4","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
-}
-function WinOpen_z10() {
-window.open("zad10_iwi.html","grafika4","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
-}
-function WinOpen_z11() {
-window.open("zad11_iwi.html","grafika4","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
-}
-  function WinOpen_z11_KOD() {
-window.open("zad11_iwi_KOD.html","grafika4","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
-}
-      function WinOpen_z12() {
-window.open("zad12_iwi.html","grafika4","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
-}
-        function WinOpen_z13() {
-window.open("zad13_iwi.html","grafika4","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
-}
-      function WinOpen_z13_KOD() {
-window.open("zad13_iwi_KOD.html","grafika4","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
-}
-function WinOpen_z14() {
-window.open("zad14_iwi.html","grafika4","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
-}
-  function WinOpen_z15() {
-window.open("zad15_iwi.html","grafika4","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
-}
-      function WinOpen_z15_KOD() {
-window.open("zad15_iwi_KOD.html","grafika4","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
-}
-    function WinOpen_z16() {
-window.open("zad16_iwi.html","grafika4","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
-}
-      function WinOpen_z16_KOD() {
-window.open("zad28_iwi_KOD.html","grafika4","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
-}
-      function WinOpen_z28() {
-window.open("zad28_iwi.html","okno28","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
-}
-      function WinOpen_z28_KOD() {
-window.open("zad28_iwi_kod.html","okno28k","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
-}
-        function WinOpen_z29() {
-window.open("zad29_iwi.html","okno29","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
-}
-      function WinOpen_z29_KOD() {
-window.open("zad29_iwi_KOD.html","okno29k","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
-}
-        function WinOpen_z30() {
-window.open("zad30_iwi.html","okno30","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
-}
-      function WinOpen_z30_KOD() {
-window.open("zad30_iwi_KOD.html","okno30k","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
-}
-          function WinOpen_z31() {
-window.open("zad31_iwi.html","okno31","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
-}
-      function WinOpen_z31_KOD() {
-window.open("zad31_iwi_KOD.html","okno31k","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
-}
-          function WinOpen_z32() {
-window.open("zad32_iwi.html","okno32","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
-}
-      function WinOpen_z32_KOD() {
-window.open("zad32_iwi_KOD.html","okno30k","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
-}
-  function WinOpen_z35() {
-  window.open("zad35_iwi.html","grafika35","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
+
+function WinOpen_stare() {
+
+  window.open("stare.html", "stare", `toolbar=no,directories=no,menubar=no,height=800,width=2000`);
 }
 
-function WinOpen_z36() {
-  window.open("zad36_iwi.html","grafika36","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
-}
-
-function WinOpen_z37() {
-  window.open("zad37_iwi.html","grafika37","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
-}
-
-function WinOpen_z38() {
-  window.open("zad38_iwi.html","grafika38","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
-}
-
-function WinOpen_z39() {
-  window.open("zad39_iwi.html","grafika39","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
-}
-
-function WinOpen_z40() {
-  window.open("zad40_iwi.html","grafika40","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
+function WinOpen_z35() {
+  const leftPosition = (window.screen.width - 600) / 2;
+  const topPosition = (window.screen.height - 600) / 2;
+  window.open("zad5_iwi.html", "window5", `toolbar=no,directories=no,menubar=no,height=600,width=600,top=${topPosition},left=${leftPosition}`);
 }
 
 function WinOpen_z35_KOD() {
-  window.open("zad35_iwi_KOD.html","grafika35_KOD","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
+  const leftPosition = (window.screen.width - 600) / 2;
+  const topPosition = (window.screen.height - 600) / 2;
+  window.open("zad5_iwi_KOD.html", "window5kod", `toolbar=no,directories=no,menubar=no,height=600,width=600,top=${topPosition},left=${leftPosition}`);
+}
+
+function WinOpen_z36() {
+  const leftPosition = (window.screen.width - 600) / 2;
+  const topPosition = (window.screen.height - 600) / 2;
+  window.open("zad6_iwi.html", "window6", `toolbar=no,directories=no,menubar=no,height=600,width=600,top=${topPosition},left=${leftPosition}`);
 }
 
 function WinOpen_z36_KOD() {
-  window.open("zad36_iwi_KOD.html","grafika36_KOD","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
+  const leftPosition = (window.screen.width - 600) / 2;
+  const topPosition = (window.screen.height - 600) / 2;
+  window.open("zad6_iwi_KOD.html", "window6kod", `toolbar=no,directories=no,menubar=no,height=600,width=600,top=${topPosition},left=${leftPosition}`);
+}
+
+function WinOpen_z37() {
+  const leftPosition = (window.screen.width - 600) / 2;
+  const topPosition = (window.screen.height - 600) / 2;
+  window.open("zad7_iwi.html", "window7", `toolbar=no,directories=no,menubar=no,height=600,width=600,top=${topPosition},left=${leftPosition}`);
 }
 
 function WinOpen_z37_KOD() {
-  window.open("zad37_iwi_KOD.html","grafika37_KOD","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
+  const leftPosition = (window.screen.width - 600) / 2;
+  const topPosition = (window.screen.height - 600) / 2;
+  window.open("zad7_iwi_KOD.html", "window7kod", `toolbar=no,directories=no,menubar=no,height=600,width=600,top=${topPosition},left=${leftPosition}`);
+}
+
+function WinOpen_z38() {
+  const leftPosition = (window.screen.width - 600) / 2;
+  const topPosition = (window.screen.height - 600) / 2;
+  window.open("zad8_iwi.html", "window8", `toolbar=no,directories=no,menubar=no,height=600,width=600,top=${topPosition},left=${leftPosition}`);
 }
 
 function WinOpen_z38_KOD() {
-  window.open("zad38_iwi_KOD.html","grafika38_KOD","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
+  const leftPosition = (window.screen.width - 600) / 2;
+  const topPosition = (window.screen.height - 600) / 2;
+  window.open("zad8_iwi_KOD.html", "window8kod", `toolbar=no,directories=no,menubar=no,height=600,width=600,top=${topPosition},left=${leftPosition}`);
+}
+
+function WinOpen_z39() {
+  const leftPosition = (window.screen.width - 600) / 2;
+  const topPosition = (window.screen.height - 600) / 2;
+  window.open("zad9_iwi.html", "window9", `toolbar=no,directories=no,menubar=no,height=600,width=600,top=${topPosition},left=${leftPosition}`);
 }
 
 function WinOpen_z39_KOD() {
-  window.open("zad39_iwi_KOD.html","grafika39_KOD","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
+  const leftPosition = (window.screen.width - 600) / 2;
+  const topPosition = (window.screen.height - 600) / 2;
+  window.open("zad10_iwi_KOD.html", "window9kod", `toolbar=no,directories=no,menubar=no,height=600,width=600,top=${topPosition},left=${leftPosition}`);
+}
+
+function WinOpen_z10() {
+  const leftPosition = (window.screen.width - 600) / 2;
+  const topPosition = (window.screen.height - 600) / 2;
+  window.open("zad10_iwi.html", "window10", `toolbar=no,directories=no,menubar=no,height=600,width=600,top=${topPosition},left=${leftPosition}`);
+}
+
+function WinOpen_z10_KOD() {
+  const leftPosition = (window.screen.width - 600) / 2;
+  const topPosition = (window.screen.height - 600) / 2;
+  window.open("zad9_iwi_KOD.html", "window10kod", `toolbar=no,directories=no,menubar=no,height=600,width=600,top=${topPosition},left=${leftPosition}`);
+}
+
+function WinOpen_z40() {
+  const leftPosition = (window.screen.width - 700) / 2;
+  const topPosition = (window.screen.height - 800) / 2;
+  window.open("zad40_iwi.html", "window40", `toolbar=no,directories=no,menubar=no,height=800,width=700,top=${topPosition},left=${leftPosition}`);
 }
 
 function WinOpen_z40_KOD() {
-  window.open("zad40_iwi_KOD.html","grafika40_KOD","toolbar=no,directories=no,menubar=no,height=800,width=700,top=400,left=1815");
+  const leftPosition = (window.screen.width - 700) / 2;
+  const topPosition = (window.screen.height - 800) / 2;
+  window.open("zad40_iwi_KOD.html", "window40kod", `toolbar=no,directories=no,menubar=no,height=800,width=700,top=${topPosition},left=${leftPosition}`);
 }
 
-  
-  
+
+
 
 function okno_zamknij() {
   window.close();
@@ -149,59 +247,34 @@ function okno_zamknij() {
 </script>
 </head>
 <body>
+<img src="image1.png" alt="Your Image" class="top-image">
+
+  <div>
+     <div class="wave"></div>
+     <div class="wave"></div>
+     <div class="wave"></div>
+  </div>
+
 <center>
 <p><b><font color="red" size="8">Szkielet zaliczeniowy JavaScript Patryk Iwinski 3g. </font></b></p>
 <form>
-<input type="button" name="zad1" value="zad1" onclick="WinOpen_z1()">
-<input type="button" name="zad2" value="zad2" onclick="WinOpen_z2()">
-<input type="button" name="zad3" value="zad3" onclick="WinOpen_z3()">
-<input type="button" name="zad4" value="zad4" onclick="WinOpen_z4()">
-<input type="button" name="zad5" value="zad5" onclick="WinOpen_z5()">
-<input type="button" name="zad6" value="zad6" onclick="WinOpen_z6()">
-<input type="button" name="zad7" value="zad7" onclick="WinOpen_z7()">
-<input type="button" name="zad8" value="zad8" onclick="WinOpen_z8()">
-  <input type="button" name="zad9" value="zad9" onclick="WinOpen_z9()">
-<input type="button" name="zad10" value="zad10" onclick="WinOpen_z10()">
-<input type="button" name="zad11" value="zad11" onclick="WinOpen_z11()">
-  <input type="button" name="zad11_KOD" value="zad11_KOD" onclick="WinOpen_z11_KOD()">
-  <input type="button" name="zad12" value="zad12" onclick="WinOpen_z12()">
-  <input type="button" name="zad13" value="zad13" onclick="WinOpen_z13()">
-    <input type="button" name="zad13_KOD" value="zad13_KOD" onclick="WinOpen_z13_KOD()">
-  <input type="button" name="zad14" value="zad14" onclick="WinOpen_z14()">
-  <input type="button" name="zad15" value="zad15" onclick="WinOpen_z15()">
-      <input type="button" name="zad15_KOD" value="zad15_KOD" onclick="WinOpen_z15_KOD()">
-  <input type="button" name="zad16" value="zad16" onclick="WinOpen_z16()">
-      <input type="button" name="zad16_KOD" value="zad16_KOD" onclick="WinOpen_z16_KOD()">
-<br><br><br>
-  <br><br><br>
-    <input type="button" name="zad28" value="zad28" onclick="WinOpen_z28()">
-      <input type="button" name="zad28_KOD" value="zad28_KOD" onclick="WinOpen_z28_KOD()">
-    <input type="button" name="zad29" value="zad29" onclick="WinOpen_z29()">
-      <input type="button" name="zad29_KOD" value="zad29_KOD" onclick="WinOpen_z29_KOD()">
-    <input type="button" name="zad30" value="zad30" onclick="WinOpen_z30()">
-      <input type="button" name="zad30_KOD" value="zad30_KOD" onclick="WinOpen_z30_KOD()">
-    <input type="button" name="zad31" value="zad31" onclick="WinOpen_z31()">
-      <input type="button" name="zad31_KOD" value="zad31_KOD" onclick="WinOpen_z31_KOD()">
-    <input type="button" name="zad32" value="zad32" onclick="WinOpen_z32()">
-      <input type="button" name="zad32_KOD" value="zad32_KOD" onclick="WinOpen_z32_KOD()">
-<br><br><br>
-  <input type="button" name="zad35" value="zad35" onclick="WinOpen_z35()">
-<input type="button" name="zad36" value="zad36" onclick="WinOpen_z36()">
-<input type="button" name="zad37" value="zad37" onclick="WinOpen_z37()">
-<input type="button" name="zad38" value="zad38" onclick="WinOpen_z38()">
-<input type="button" name="zad39" value="zad39" onclick="WinOpen_z39()">
-<input type="button" name="zad40" value="zad40" onclick="WinOpen_z40()">
+<!-- Przyciski dla każdego zadX i zadX_KOD -->
+
+  <input type="button" class="custom-btn btn-1" name="zad35" value="zad35" onclick="WinOpen_z35()">
+<input type="button" class="custom-btn btn-1" name="zad36" value="zad36" onclick="WinOpen_z36()">
+<input type="button" class="custom-btn btn-1" name="zad37" value="zad37" onclick="WinOpen_z37()">
+<input type="button" class="custom-btn btn-1" name="zad38" value="zad38" onclick="WinOpen_z38()">
+<input type="button" class="custom-btn btn-1" name="zad39" value="zad39" onclick="WinOpen_z39()">
+<input type="button" class="custom-btn btn-1" name="zad40" value="zad40" onclick="WinOpen_z40()">
   <br>
-<input type="button" name="zad35_KOD" value="zad35_KOD" onclick="WinOpen_z35_KOD()">
-<input type="button" name="zad36_KOD" value="zad36_KOD" onclick="WinOpen_z36_KOD()">
-<input type="button" name="zad37_KOD" value="zad37_KOD" onclick="WinOpen_z37_KOD()">
-<input type="button" name="zad38_KOD" value="zad38_KOD" onclick="WinOpen_z38_KOD()">
-<input type="button" name="zad39_KOD" value="zad39_KOD" onclick="WinOpen_z39_KOD()">
-<input type="button" name="zad40_KOD" value="zad40_KOD" onclick="WinOpen_z40_KOD()">
-
-  <br><br><br><br><br><br>
-
-<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+<input type="button" class="custom-btn btn-1" name="zad35_KOD" value="zad35_KOD" onclick="WinOpen_z35_KOD()">
+<input type="button" class="custom-btn btn-1" name="zad36_KOD" value="zad36_KOD" onclick="WinOpen_z36_KOD()">
+<input type="button" class="custom-btn btn-1" name="zad37_KOD" value="zad37_KOD" onclick="WinOpen_z37_KOD()">
+<input type="button" class="custom-btn btn-1" name="zad38_KOD" value="zad38_KOD" onclick="WinOpen_z38_KOD()">
+<input type="button" class="custom-btn btn-1" name="zad39_KOD" value="zad39_KOD" onclick="WinOpen_z39_KOD()">
+<input type="button" class="custom-btn btn-1" name="zad40_KOD" value="zad40_KOD" onclick="WinOpen_z40_KOD()">
+<br><br><br><br>
+<input type="button" class="custom-btn btn-1" name="stare" value="Stare zadania" onclick="WinOpen_stare()">
 </form>
 </center>
 </body>
