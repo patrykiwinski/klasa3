@@ -81,6 +81,15 @@ background: rgb(6,14,131);
    transform: scale(1.2);
   
   }
+  form {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			padding: 20px;
+			box-sizing: border-box;
+		}
 
 
 
@@ -94,7 +103,7 @@ background: rgb(6,14,131);
 
 
 body {
-    margin: auto;
+    
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     overflow: auto;
     background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
@@ -271,29 +280,25 @@ function okno_zamknij() {
 </script>
 </head>
 <body>
-<img src="image1.png" alt="Your Image" class="top-image">
 
-  <div>
-     <div class="wave"></div>
-     <div class="wave"></div>
-     <div class="wave"></div>
-  </div>
 
-<center>
+
 <div class="container">
+<form>
   <h1 contenteditable>Szkielet zaliczeniowy JavaScript Patryk Iwinski 3g</h1>
 
+<center>
 
-<form>
 <!-- Przyciski dla każdego zadX i zadX_KOD -->
-
-  <input type="button" class="custom-btn btn-1" name="zad35" value="zad35" onclick="WinOpen_z35()">
+ 
+<input type="button" class="custom-btn btn-1" name="zad35" value="zad35" onclick="WinOpen_z35()">
 <input type="button" class="custom-btn btn-1" name="zad36" value="zad36" onclick="WinOpen_z36()">
 <input type="button" class="custom-btn btn-1" name="zad37" value="zad37" onclick="WinOpen_z37()">
 <input type="button" class="custom-btn btn-1" name="zad38" value="zad38" onclick="WinOpen_z38()">
 <input type="button" class="custom-btn btn-1" name="zad39" value="zad39" onclick="WinOpen_z39()">
 <input type="button" class="custom-btn btn-1" name="zad40" value="zad40" onclick="WinOpen_z40()">
   <br>
+ 
 <input type="button" class="custom-btn btn-1" name="zad35_KOD" value="zad35_KOD" onclick="WinOpen_z35_KOD()">
 <input type="button" class="custom-btn btn-1" name="zad36_KOD" value="zad36_KOD" onclick="WinOpen_z36_KOD()">
 <input type="button" class="custom-btn btn-1" name="zad37_KOD" value="zad37_KOD" onclick="WinOpen_z37_KOD()">
@@ -303,6 +308,14 @@ function okno_zamknij() {
 <br><br><br><br>
 <input type="button" class="custom-btn btn-1" name="stare" value="Stare zadania" onclick="WinOpen_stare()">
 </form>
+</center>
+</div>
+
+  <div>
+     <div class="wave"></div>
+     <div class="wave"></div>
+     <div class="wave"></div>
+  </div>
 </center>
 </body>
 </html>
