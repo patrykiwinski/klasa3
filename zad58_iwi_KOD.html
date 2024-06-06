@@ -1,0 +1,67 @@
+<html>
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_siejka()
+ {
+ window.close()
+ }
+ </script>
+</head>
+<body>
+ <form>
+ <textarea name="siejka" cols="80" rows="20" readonly>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Wypisywanie liczb nieparzystych</title>
+    <style>
+        .zielony { 
+            color: green; 
+            font-size: 60px; 
+        }
+        .niebieski { 
+            color: blue; 
+            font-size: 60px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Wypisywanie liczb nieparzystych</h1>
+    <div id="wynik"></div>
+    <script>
+        function wypiszLiczbyNieparzyste() {
+            var pierwsza = parseInt(prompt("Podaj pierwszą liczbę:"));
+            var druga = parseInt(prompt("Podaj drugą liczbę:"));
+            var wynik = "";
+            var klasaStylu = pierwsza < druga ? "zielony" : "niebieski";
+            var poczatek = Math.min(pierwsza, druga);
+            var koniec = Math.max(pierwsza, druga);
+
+            if (isNaN(pierwsza) || isNaN(druga)) {
+                wynik = "Podane wartości nie są liczbami.";
+            } else if (pierwsza === druga) {
+                wynik = "Podane liczby są równe.";
+            } else {
+                for (var i = poczatek; i <= koniec; i++) {
+                    if (i % 2 !== 0) {
+                        wynik += '<span class="' + klasaStylu + '">' + i + '</span><br> ';
+                    }
+                }
+                wynik = wynik ? wynik.slice(0, -2) : "Brak liczb nieparzystych.";
+            }
+
+            document.getElementById("wynik").innerHTML = wynik;
+        }
+
+        wypiszLiczbyNieparzyste();
+    </script>
+</body>
+</html>
+ </textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_siejka()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_siejka()
+ {
+ window.close()
+ }
+ </script>
+</head>
+<body>
+ <form>
+ <textarea name="siejka" cols="80" rows="20" readonly>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liczby pierwsze</title>
+</head>
+<body>
+    <h1>Liczby pierwsze</h1>
+    <div id="result"></div>
+
+    <script>
+        let result = document.getElementById("result");
+        let primeNumbers = [];
+
+        for (let i_iwi = 0; i_iwi < 40; i_iwi++) {
+            let w = i_iwi * i_iwi + i_iwi + 41;
+            let isPrime = true;
+
+            if (isPrime) {
+                primeNumbers.push(`i_iwi = ${i_iwi}, w(${i_iwi}) = ${w}`);
+            }
+        }
+
+        result.innerHTML = primeNumbers.join("<br>");
+    </script>
+</body>
+</html>
+ </textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_siejka()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>

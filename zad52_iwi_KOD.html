@@ -1,0 +1,58 @@
+<html>
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_siejka()
+ {
+ window.close()
+ }
+ </script>
+</head>
+<body>
+ <form>
+ <textarea name="siejka" cols="80" rows="20" readonly>
+ <!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 52</title>
+</head>
+<body>
+    <script>
+        var nazwisko = "Iwiński"; 
+        var imie = "Patryk"; 
+        var a = (nazwisko.length % 4) + 5;
+        var b = (imie.length % 6) + 20;
+
+        document.write("<pre>"); 
+        // Górna krawędź
+        for (var i = 0; i < b + 2; i++) {
+            document.write("*");
+        }
+        document.write("<br>");
+
+        // Środek
+        for (var i = 0; i < a; i++) {
+            document.write("*");
+            for (var j = 0; j < b; j++) {
+                document.write("&nbsp;");
+            }
+            document.write("*<br>");
+        }
+
+        // Dolna krawędź
+        for (var i = 0; i < b + 2; i++) {
+            document.write("*");
+        }
+        document.write("<br>");
+        document.write("</pre>");
+    </script>
+</body>
+</html>
+ </textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_siejka()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>
