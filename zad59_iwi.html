@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Szukaj Kwadratu</title>
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #radiusForm {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #radiusForm label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  #radiusForm input[type="number"] {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  #radiusForm button[type="submit"] {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  #radiusForm button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+
+ #punkty {
+  width: 200px;
+  margin: 20px auto; /* add this line */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+</style>
+<body>
+<h2>Współrzędne punktów w kwadracie</h2>
+<form id="radiusForm">
+    <label for="radius">Promień:</label>
+    <input type="number" id="radius" name="radius" step="0.1" required>
+    <button type="submit">Generuj punkty</button>
+</form>
+<div id="punkty"></div>
+
+<script>
+document.getElementById("radiusForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    var promien = parseFloat(document.getElementById("radius").value);
+    szukajKwadratu(promien);
+});
+
+function czekaj(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function szukajKwadratu(R) {
+
+    var punkty = document.getElementById("punkty");
+    var licznik = 0;
+    if(R<0){
+	punkty.innerHTML = "<p>Wprowadz liczbe dodatnią</p>";}
+	else{
+punkty.innerHTML = "<p>Współrzędne punktów wewnątrz kwadratu:<ul></p>";
+    for (var x = (-1 - R) | 0; x <= (1 + R) | 0; x++) {
+    for (var y = (-1 - R) | 0; y <= (1 + R) | 0; y++) {
+            if (Math.pow(x, 2) + Math.pow(y, 2) <= Math.pow(R, 2)) {
+                punkty.innerHTML += "<li>(" + x + ", " + y + ")</li><br>";
+                await czekaj(0,5);
+                licznik++;
+            }
+        }
+    }
+	}
+	await czekaj(10);
+	if(R<0){
+	;
+	}
+	else{
+    alert("Liczba punktów wewnątrz kwadratu: " + licznik);
+	}
+}
+</script>
+</body>
+</html>
