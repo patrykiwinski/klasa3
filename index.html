@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -107,6 +108,22 @@ background: rgb(6,14,131);
   border: none;
 }
 
+/* 3 */
+.btn-3 {
+  font-family: 'Lato', sans-serif;
+  background: rgb(252, 199, 54);
+  color: black; 
+  border: 6px solid black; 
+  font-weight: 500;
+  text-align: center;
+}
+
+.btn-3:hover {
+
+  background: linear-gradient(30deg, rgba(231, 29, 54,1) 0%, rgba(252, 199, 54,1) 100%);
+  border: none;
+   transform: scale(1.2);
+}
   form {
 			position: absolute;
 			top: 0;
@@ -539,6 +556,18 @@ const topPosition = (window.screen.height - 800) / 2;
 window.open("zad58_iwi_KOD.html", "window58kod", `toolbar=no,directories=no,menubar=no,height=800,width=700,top=${topPosition},left=${leftPosition}`);
 }
 
+function WinOpen_z59() {
+const leftPosition = (window.screen.width - 700) / 2;
+const topPosition = (window.screen.height - 800) / 2;
+window.open("zad59_iwi.html", "window59", `toolbar=no,directories=no,menubar=no,height=800,width=700,top=${topPosition},left=${leftPosition}`);
+}
+
+function WinOpen_z59_KOD() {
+const leftPosition = (window.screen.width - 700) / 2;
+const topPosition = (window.screen.height - 800) / 2;
+window.open("zad59_iwi_KOD.html", "window59kod", `toolbar=no,directories=no,menubar=no,height=800,width=700,top=${topPosition},left=${leftPosition}`);
+}
+
 
 
 
@@ -627,7 +656,9 @@ function okno_zamknij() {
 <input type="button" class="custom-btn btn-1" value="zad57_KOD" onclick="WinOpen_z57_KOD()">
 <input type="button" class="custom-btn btn-1" value="zad57_KOD_s" onclick="WinOpen_z57_KOD_s()">
 <input type="button" class="custom-btn btn-1" value="zad58_KOD" onclick="WinOpen_z58_KOD()">
-
+<br>
+<input type="button" class="custom-btn btn-3" value="zad59" onclick="WinOpen_z59()">
+<input type="button" class="custom-btn btn-3" value="zad59_KOD" onclick="WinOpen_z59_KOD()">
 <br><br><br><br>
 <input type="button" class="custom-btn btn-1" name="stare" value="Stare zadania" onclick="WinOpen_stare()">
 </form>
