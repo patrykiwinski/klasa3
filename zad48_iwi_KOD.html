@@ -10,30 +10,39 @@
 <body>
  <form>
  <textarea name="siejka" cols="80" rows="20" readonly>
- <!DOCTYPE html>
+ 
+<!DOCTYPE html>
 <html>
 <head>
   <title>Sigma Calculator</title>
+  <style>
+    body {
+	background-color: 	#dcedc1;
+      font-family: Arial, sans-serif;
+      text-align: center;
+	  font-size: 24px;
+      font-weight: bold;
+      color: #008000;
+    }
+    h1 {
+      color: #00698f;
+    }
+   
+  </style>
 </head>
-<body>
-  <h1>Sigma Calculator</h1>
-  <form>
-    <input id="result" type="text" readonly> <br>
-	 <input id="result1" type="text" readonly>
-  </form>
-  <script>
-    let sum = 0;
-    for (let i = 2; i <= 4; i++) {
-      sum += i * i; // calculate i^2 and add to sum
-    }
-    document.getElementById("result").value = sum;
-	
-	 let sum1 = 0;
-    for (let i = 3; i >= 1; i--) {
-      sum1 += i / (i + 2);
-    }
-    document.getElementById("result1").value = sum1;
-  </script>
+<body">
+<div>
+<h1>Sigma Calculator</h1>
+ <script language="JavaScript">
+ var suma_iwi=0;
+ for(i=1;i<=1000000;i++)
+ {
+ suma_iwi=suma_iwi+1/i;
+ }
+ document.write("suma="+suma_iwi+"<br>");
+ 
+ </script>
+</div>
 </body>
 </html>
  </textarea>
